@@ -1,63 +1,48 @@
-/* ==========================================================================
-   РОЗДІЛ СТИЛІВ ДЛЯ ЗВІТУ З ВИБІРКОВОЇ РОБОТИ (МЕТОДИЧНІ ВИМОГИ НА 25-30 БАЛІВ):
-   1. Базові властивості CSS:
-      - background-color: фонова заливка секцій та кнопок
-      - font-family / font-size: підбір шрифтової пари та кеглів заголовків
-      - color: контрастний колір шрифту для читабельності
-      - margin / padding: зовнішні поля та внутрішні відступи блоків
-   2. Самостійно вивчена властивість CSS:
-      - Преміальна градієнтна заливка кнопки: linear-gradient(135deg, #1b3d36 0%, #2f6b5f 50%, #152e29 100%)
-      - Заокруглення кнопки у форму капсули: border-radius: 999px
-      - Просторовий підйом та скейлінг при наведенні курсору: transform: translateY(-3px) scale(1.02)
-      - М'яке розсіяне світіння: box-shadow: 0 12px 28px rgba(47, 107, 95, 0.45)
-      - Плавна зміна станів: transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
-   ========================================================================== */
-
-/* 1. Блок обов'язкового навчального застереження у підвалі сайту */
+/* Educational notice */
 .educational-notice {
-  background-color: rgba(255, 255, 255, 0.08); /* Базова властивість: background-color */
+  background-color: rgba(255, 255, 255, 0.08); 
   border: 1px dashed #f59e0b;
-  border-radius: 12px;                          /* Самостійно вивчена: border-radius */
-  padding: 16px 22px;                           /* Базова властивість: padding */
-  margin: 25px auto;                            /* Базова властивість: margin */
+  border-radius: 12px;                          
+  padding: 16px 22px;                           
+  margin: 25px auto;                            
   max-width: 960px;
   text-align: center;
-  font-family: var(--font-body, 'Golos Text', sans-serif); /* Базова властивість: font-family */
-  font-size: 14px;                              /* Базова властивість: font-size */
+  font-family: var(--font-body, 'Golos Text', sans-serif); 
+  font-size: 14px;                              
   line-height: 1.6;
-  color: #fef3c7;                               /* Базова властивість: color */
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15); /* Самостійно вивчена: box-shadow */
+  color: #fef3c7;                               
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15); 
 }
 
-/* 2. Самостійно вивчені властивості CSS: Інтерактивна градієнтна кнопка */
+/* Gradient button */
 .btn--gradient {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 13px 28px;                           /* Базова властивість: padding */
-  font-family: var(--font-display, 'SUSE', sans-serif); /* Базова властивість: font-family */
-  font-size: 14px;                              /* Базова властивість: font-size */
+  padding: 13px 28px;                           
+  font-family: var(--font-display, 'SUSE', sans-serif); 
+  font-size: 14px;                              
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #ffffff !important;                    /* Базова властивість: color */
+  color: #ffffff !important;                    
   text-decoration: none;
-  /* Самостійно вивчена властивість: багатоколірний градієнт */
+  
   background: linear-gradient(135deg, #1b3d36 0%, #2f6b5f 50%, #152e29 100%) !important;
-  /* Самостійно вивчена властивість: форма pill */
+  
   border-radius: 999px !important;
   border: none;
   cursor: pointer;
-  /* Самостійно вивчена властивість: об'ємна тінь */
+  
   box-shadow: 0 6px 18px rgba(47, 107, 95, 0.35);
-  /* Самостійно вивчена властивість: плавний кубічний перехід */
+  
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn--gradient:hover {
-  /* Самостійно вивчена властивість: комбінована просторова трансформація */
+  
   transform: translateY(-3px) scale(1.02);
-  /* Самостійно вивчена властивість: посилена кольорова тінь */
+  
   box-shadow: 0 12px 28px rgba(47, 107, 95, 0.5);
   filter: brightness(1.08);
 }
@@ -67,21 +52,21 @@
   box-shadow: 0 4px 12px rgba(47, 107, 95, 0.25);
 }
 
-/* 3. Блок студентських партнерських проектів (Вимога методички: 2-3 посилання) */
+/* Partner projects */
 .student-partners-box {
-  background-color: #f8fafc;                    /* Базова властивість: background-color */
+  background-color: #f8fafc;                    
   border: 1px solid #e2e8f0;
-  border-radius: 16px;                          /* Самостійно вивчена: border-radius */
-  padding: 28px 32px;                           /* Базова властивість: padding */
-  margin: 35px auto;                            /* Базова властивість: margin */
+  border-radius: 16px;                          
+  padding: 28px 32px;                           
+  margin: 35px auto;                            
   max-width: var(--container, 1200px);
 }
 
 .student-partners-box h3 {
-  font-family: var(--font-display, 'SUSE', sans-serif); /* Базова властивість: font-family */
-  font-size: 1.35rem;                           /* Базова властивість: font-size */
-  color: #0f172a;                               /* Базова властивість: color */
-  margin-bottom: 8px;                           /* Базова властивість: margin */
+  font-family: var(--font-display, 'SUSE', sans-serif); 
+  font-size: 1.35rem;                           
+  color: #0f172a;                               
+  margin-bottom: 8px;                           
 }
 
 .student-partners-list {
@@ -385,7 +370,6 @@
 /* Reveal (only when JS has opted in and motion is allowed) ---------------- */
 .js-reveal [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); }
 .js-reveal [data-reveal].is-in { opacity: 1; transform: none; }
-
 
 /* ==========================================================================
    Студентські доопрацювання CSS (за завданням та регламентом оцінювання)
