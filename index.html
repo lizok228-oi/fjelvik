@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<!-- 1. Google tag (gtag.js) — Google Analytics за методичкою -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0F7MD5NGNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0F7MD5NGNV');
+</script>
+
+<!-- 2. Microsoft Clarity — для аналізу поведінки та теплових карт кліків -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "pxyz123456");
+</script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- SEO-метатеги з семантичного ядра -->
+<title>Fjelvik Україна — Авторські тури, гірські походи та подорожі</title>
+<meta name="description" content="Офіційний сайт туристичної агенції Fjelvik в Україні. Авторські тури в гори, експедиції до фіордів та озер у невеликих групах. Бронювання турів онлайн." />
+<meta name="keywords" content="тури в гори, авторські тури, туристична агенція Одеса, трекінг, Fjelvik Україна, відпочинок у горах, активний туризм" />
+<meta name="theme-color" content="#101412" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23101412'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%23D5E4E1'/%3E%3Cpath d='M5 24l7-8 4 4 3-3 8 7z' fill='%23fff'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до вмісту</a>
+
+<header class="header" data-header="photo">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Fjelvik Україна — головна">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="16" cy="11.5" r="3.2" fill="currentColor" />
+        <path d="M5.5 23.5 12.5 16l4 4 3-3 7 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      </svg>
+      <span class="brand__word">fjelvik</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Головна навігація">
+      <a href="index.html" aria-current="page">Головна</a>
+      <a href="tours.html">Тури</a>
+      <a href="about.html">Про нас</a>
+      <a href="#partners">Партнери</a>
+      <a href="contact.html">Контакти</a>
+      <a class="nav__signin-mobile" href="contact.html">Підібрати тур</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="btn btn--gradient header__signin" href="contact.html">Підібрати тур</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Відкрити меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== Hero: фото-банер + форма швидкого бронювання туру ===== -->
+<section class="hero on-photo" aria-labelledby="hero-title">
+  <img class="hero__img" src="https://images.pexels.com/photos/4104906/pexels-photo-4104906.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Гірське озеро на світанку, гори відображаються у воді" width="2000" height="1333" fetchpriority="high" decoding="async" />
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>42 організовані тури цього сезону</p>
+      <h1 id="hero-title" class="hero__title">Знайдіть свою наступну незабутню подорож</h1>
+      <p class="hero__sub">Авторські тури до мальовничих озер, вулканів та фіордів у невеликих групах з місцевими гідами. Ви берете з собою натхнення — про все інше дбаємо ми.</p>
+      <a class="cta-orbit btn--gradient" href="tours.html">
+        <span class="cta-orbit__text">Обрати тур</span>
+        <span class="cta-orbit__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      </a>
+    </div>
+
+    <form class="booking" data-booking aria-label="Пошук подорожей">
+      <div class="booking__tabs" role="tablist" aria-label="Тип послуги">
+        <button type="button" role="tab" id="tab-tour" aria-selected="true" aria-controls="panel-tour">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8-8-2Z"/></svg>Тури
+        </button>
+        <button type="button" role="tab" id="tab-flight" aria-selected="false" aria-controls="panel-flight" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16h20M5 16l-1-5h3l2 3h4l-2-8h3l5 8"/></svg>Авіаквитки
+        </button>
+        <button type="button" role="tab" id="tab-hotel" aria-selected="false" aria-controls="panel-hotel" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4h10v17M15 9h4v12M9 8h2M9 12h2M9 16h2M3 21h18"/></svg>Готелі
+        </button>
+      </div>
+
+      <div class="booking__panel" id="panel-tour" role="tabpanel" aria-labelledby="tab-tour">
+        <div class="field">
+          <label class="field__label" for="tour-dest">Напрямок подорожі</label>
+          <span class="input">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <select id="tour-dest" name="destination">
+              <option>Озеро Брайєс, Доломітові Альпи (Італія)</option>
+              <option>Вулкан Бромо, Східна Ява (Індонезія)</option>
+              <option>Бухта Халонг (В'єтнам)</option>
+              <option>Гора Фудзі та озера (Японія)</option>
+              <option>Архіпелаг Раджа-Ампат (Індонезія)</option>
+              <option>Озеро Сете-Сідадеш, Азорські острови</option>
+            </select>
+          </span>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="tour-in">Дата виїзду</label>
+            <span class="input"><input id="tour-in" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="tour-out">Дата повернення</label>
+            <span class="input"><input id="tour-out" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__label" id="guest-label">Кількість туристів</span>
+          <div class="input stepper" data-stepper data-min="1" data-max="12" role="group" aria-labelledby="guest-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg>
+            <output aria-live="polite" data-count="2">2 особи</output>
+            <button type="button" data-step="-1" aria-label="Менше туристів">&minus;</button>
+            <button type="button" data-step="1" aria-label="Більше туристів">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking__panel" id="panel-flight" role="tabpanel" aria-labelledby="tab-flight" hidden>
+        <div class="booking__row">
+          <div class="field">
+            <label class="field__label" for="fl-from">Звідки</label>
+            <span class="input"><input id="fl-from" type="text" value="Київ / Варшава" autocomplete="off" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="fl-to">Куди</label>
+            <span class="input"><input id="fl-to" type="text" value="Мілан (MXP)" autocomplete="off" /></span>
+          </div>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="fl-dep">Виліт</label>
+            <span class="input"><input id="fl-dep" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="fl-ret">Повернення</label>
+            <span class="input"><input id="fl-ret" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="fl-cabin">Клас квитка</label>
+          <span class="input"><select id="fl-cabin"><option>Економ</option><option>Преміум економ</option><option>Бізнес</option></select></span>
+        </div>
+      </div>
+
+      <div class="booking__panel" id="panel-hotel" role="tabpanel" aria-labelledby="tab-hotel" hidden>
+        <div class="field">
+          <label class="field__label" for="ht-city">Місто або курорт</label>
+          <span class="input"><input id="ht-city" type="text" value="Кортіна-д'Ампеццо, Італія" autocomplete="off" /></span>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="ht-in">Заїзд</label>
+            <span class="input"><input id="ht-in" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="ht-out">Виїзд</label>
+            <span class="input"><input id="ht-out" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ht-rooms">Номери та гості</label>
+          <span class="input"><select id="ht-rooms"><option>1 номер, 2 дорослих</option><option>2 номери, 4 дорослих</option><option>1 номер, 1 дорослий</option></select></span>
+        </div>
+      </div>
+
+      <button class="btn btn--gradient btn--block booking__submit" type="submit">Забронювати тур</button>
+    </form>
+  </div>
+  <div class="container hero__rail" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===== Розділ цитати ===== -->
+<section class="section statement" aria-labelledby="statement-title">
+  <div class="container">
+    <h2 id="statement-title" class="statement__line" data-reveal>
+      Зробіть крок та відкрийте
+      <span class="pill-img"><img src="https://images.pexels.com/photos/18166239/pexels-photo-18166239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Мандрівник у горах" width="600" height="400" loading="lazy" decoding="async" /></span>
+      дивовижний світ,
+      <span class="pill-img pill-img--wide"><img src="https://images.pexels.com/photos/27608329/pexels-photo-27608329.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Краєвид фіорду" width="600" height="400" loading="lazy" decoding="async" /></span>
+      що чекає на вас.
+    </h2>
+    <p class="statement__sub" data-reveal>Подорожі змінюють людей. Ви відкриваєте дивовижні місця, знайомитеся з новими друзями та повертаєтеся додому з незабутніми спогадами.</p>
+  </div>
+</section>
+
+<!-- ===== Блок: фотографія + показники агенції ===== -->
+<section class="section section--flush-top" aria-labelledby="closer-title">
+  <div class="container split">
+    <figure class="split__media" data-reveal>
+      <img src="https://images.pexels.com/photos/19153480/pexels-photo-19153480.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Мандрівники у дерев'яному човні на смарагдовому озері Брайєс" width="1100" height="1375" loading="lazy" decoding="async" />
+      <figcaption class="split__cap"><span class="label">Озеро Брайєс · 06:40 світанок</span></figcaption>
+    </figure>
+    <div class="split__copy">
+      <p class="label">Чому мандрують з нами</p>
+      <h2 id="closer-title">Подорожі, які дарують справжні враження та безпеку</h2>
+      <p>Ми формуємо групи до 12 мандрівників, бронюємо затишні сімейні готелі та співпрацюємо з місцевими ліцензованими гідами. Це створює спокійну атмосферу та гарантує найкращий відпочинок.</p>
+      <dl class="ledger">
+        <div><dt>Задоволені туристи</dt><dd>97%</dd></div>
+        <div><dt>Популярні напрямки</dt><dd>85+</dd></div>
+        <div><dt>Досвідчені гіди</dt><dd>245+</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Популярні напрямки (Bento Grid) ===== -->
+<section class="section destinations" aria-labelledby="dest-title">
+  <div class="container">
+    <div class="shead shead--split">
+      <div>
+        <p class="label">Напрямки подорожей</p>
+        <h2 id="dest-title">Відкрийте найкрасивіші куточки планети</h2>
+      </div>
+      <a class="link-arrow" href="tours.html">Дивитись усі тури <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="bento">
+        <a class="dtile" href="tours.html">
+          <img src="https://images.pexels.com/photos/29298066/pexels-photo-29298066.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Озеро Брайєс, Італія" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Озеро Брайєс</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Італія, Доломіти</span>
+          </span>
+          <span class="dtile__count">6 турів</span>
+        </a>
+        <a class="dtile" href="tours.html">
+          <img src="https://images.pexels.com/photos/12278092/pexels-photo-12278092.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Вулкан Бромо, Індонезія" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Вулкан Бромо</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Індонезія, Ява</span>
+          </span>
+          <span class="dtile__count">4 тури</span>
+        </a>
+        <a class="dtile dtile--wide" href="tours.html">
+          <img src="https://images.pexels.com/photos/6871874/pexels-photo-6871874.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Бухта Халонг, В'єтнам" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Бухта Халонг</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>В'єтнам</span>
+          </span>
+          <span class="dtile__count">5 турів</span>
+        </a>
+        <a class="dtile" href="tours.html">
+          <img src="https://images.pexels.com/photos/31710067/pexels-photo-31710067.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Гора Фудзі, Японія" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Гора Фудзі</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Японія</span>
+          </span>
+          <span class="dtile__count">7 турів</span>
+        </a>
+        <a class="dtile" href="tours.html">
+          <img src="https://images.pexels.com/photos/37805584/pexels-photo-37805584.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Архіпелаг Раджа-Ампат, Індонезія" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Раджа-Ампат</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Індонезія</span>
+          </span>
+          <span class="dtile__count">3 тури</span>
+        </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Наші переваги та список за методичкою (стор. 7) ===== -->
+<section class="section promises" aria-labelledby="prom-title">
+  <div class="container">
+    <div class="shead shead--center">
+      <p class="label">Стандарти якості Fjelvik</p>
+      <h2 id="prom-title">Чому обирають нашу туристичну агенцію</h2>
+      <p>Ми дбаємо про всі організаційні деталі вашої подорожі від виїзду до повернення додому.</p>
+    </div>
+
+    <ul class="promise-row">
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg></span>
+        <h3>Легкість планування</h3>
+        <p>Трансфери, квитки та готелі бронюються заздалегідь. Один персональний менеджер, зрозумілий маршрут без неприємних сюрпризів.</p>
+      </li>
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0M12 14v3"/></svg></span>
+        <h3>Місцеві провідники</h3>
+        <p>Гіди, які досконало знають місцевість, покажуть вам затишні панорамні оглядові майданчики без натовпу туристів.</p>
+      </li>
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Безпека 24/7</h3>
+        <p>Гіди з міжнародними сертифікатами першої медичної допомоги, медичне страхування та підтримка координатора 24/7.</p>
+      </li>
+    </ul>
+
+    <!-- Обов'язкова конструкція списку ul li зі стор. 7 методичних вказівок -->
+    <div style="margin-top: 35px; background: #ffffff; padding: 28px; border-radius: 18px; border: 1px solid var(--line); box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <h3 style="margin-bottom: 14px; font-family: var(--font-display); font-size: 1.3rem;">Гарантії для кожного клієнта:</h3>
+      <ul style="padding-left: 20px; line-height: 1.8; font-size: 15px;">
+        <li>Швидка доставка протягом доби (ваучерів, квитків та страхового поліса)</li>
+        <li>Гарантійне обслуговування протягом року (клубна програма постійного мандрівника)</li>
+        <li>Безкоштовне налаштування та підбір індивідуального плану подорожі</li>
+        <li>Офіційний договір з фінансовою гарантією туристичного оператора</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Каталог популярних турів (Featured tours) ===== -->
+<section class="section" id="tours" aria-labelledby="feat-title">
+  <div class="container">
+    <div class="shead shead--split">
+      <div>
+        <p class="label">Найближчі дати</p>
+        <h2 id="feat-title">Популярні тури цього сезону</h2>
+      </div>
+      <a class="link-arrow" href="tours.html">Всі 9 турів каталогу <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="tgrid">
+        <!-- Тур 1 -->
+        <article class="tcard" data-kind="trek" data-price="1890" data-days="7">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/29298066/pexels-photo-29298066.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Доломітові Альпи та озеро Брайєс" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Трекінг</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Озеро Брайєс, Італія</p>
+            <h3 class="tcard__name"><a href="tour.html">Доломіти: озера та гірські хребти</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7 днів</span>
+              <span>Помірний</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.9 <small>(212 відгуків)</small></span>
+            </p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>від</small> 18 900 грн</span>
+              <!-- Відносне посилання на картку товару за методичкою стор. 7 -->
+              <a href="tour.html" class="link-arrow" style="font-size: 13px; font-weight: 600;">На сторінку картки туру →</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Тур 2 -->
+        <article class="tcard" data-kind="volcano" data-price="740" data-days="4">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/12278092/pexels-photo-12278092.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Вулкан Бромо, Східна Ява" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Вулкани</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Східна Ява, Індонезія</p>
+            <h3 class="tcard__name"><a href="tour.html">Експедиція: Вулкан Бромо на світанку</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4 дні</span>
+              <span>Легкий</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.8 <small>(388 відгуків)</small></span>
+            </p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>від</small> 14 500 грн</span>
+              <a href="tour.html" class="link-arrow" style="font-size: 13px; font-weight: 600;">На сторінку картки туру →</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Тур 3 -->
+        <article class="tcard" data-kind="island" data-price="560" data-days="3">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/6871874/pexels-photo-6871874.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Бухта Халонг, В'єтнам" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Острови</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Куангнінь, В'єтнам</p>
+            <h3 class="tcard__name"><a href="tour.html">Круїз бухтою Халонг на джонці</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 дні</span>
+              <span>Легкий</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.7 <small>(451 відгук)</small></span>
+            </p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>від</small> 12 200 грн</span>
+              <a href="tour.html" class="link-arrow" style="font-size: 13px; font-weight: 600;">На сторінку картки туру →</a>
+            </p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Стаття з якірним посиланням id="start" (стор. 7 методички) ===== -->
+<section class="section" id="article" style="background:#ffffff; padding: 45px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="container">
+    <h2 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 16px;">
+      <a id="start" style="color: var(--pine);">Посібник мандрівника: як підготуватися до першого гірського трекінгу</a>
+    </h2>
+    <p style="margin-bottom: 12px; color: var(--pine-soft);">
+      Гірські походи та подорожі фіордами — це дивовижний спосіб перезавантажити думки та відчути справжню велич природи. У туристичній агенції <strong>Fjelvik Україна</strong> ми підбираємо якісне спорядження та готуємо детальний чекліст для кожного учасника за два тижні до старту.
+    </p>
+    <p style="margin-bottom: 12px; color: var(--pine-soft);">
+      Головне правило вдалого туру — зручне розношене трекінгове взуття, мембранна куртка від вітру та захист від сонця. Наші інструктори перед кожним маршрутом проводять обов'язковий інструктаж з безпеки в горах.
+    </p>
+    <p style="margin-bottom: 18px; color: var(--pine-soft);">
+      Ми забезпечуємо комфортний темп руху, щоб кожен учасник міг насолодитися краєвидами та зробити незабутні фотографії.
+    </p>
+    <p>
+      <a href="#start" style="color: #2563eb; font-weight: 600; text-decoration: underline;">↑ Перейти до початку статті</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===== Студентські проєкти-партнери (Вимога Word документа: 2-3 посилання) ===== -->
+<section class="section" id="partners" style="padding: 40px 0;">
+  <div class="container">
+    <div class="student-partners-box">
+      <h3>Партнерські проекти студентів курсу «ПІАРМ» (ОНЕУ):</h3>
+      <p style="font-size: 14px; color: var(--pine-soft); margin-bottom: 15px;">Дружні веб-ресурси колег-студентів спеціальності 075 «Маркетинг» Одеського національного економічного університету:</p>
+      <ul class="student-partners-list">
+        <li><a href="https://nazarenko228.github.io/quiren/" target="_blank" rel="noopener">🏛️ Quiren Architecture — Студія авторської архітектури, проектування та урбаністики</a></li>
+        <li><a href="https://nazarenko228.github.io/fernwik/fernwick/" target="_blank" rel="noopener">🛋️ Fernwick Living — Ексклюзивний дизайнерський простір декору та меблів</a></li>
+        <li><a href="https://nazarenko228.github.io/meridia/" target="_blank" rel="noopener">🏰 Meridia Real Estate — Агентство елітної нерухомості та девелопменту в Одесі</a></li>
+        <li><a href="https://nazarenko228.github.io/lune/" target="_blank" rel="noopener">💎 LUNE Jewelry — Бренд авторських ювелірних прикрас ручної роботи</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Контакти, адреса в Одесі та Google Карта (стор. 6 методички) ===== -->
+<section class="section" id="contacts" style="background:#ffffff; padding: 45px 0;">
+  <div class="container">
+    <div class="shead">
+      <p class="label">Зв'язок з нами</p>
+      <h2>Наш офіс в Одесі та контакти</h2>
+      <p>Завітайте на консультацію щодо вибору туру або оформіть заявку онлайн.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 20px;">
+      <div style="background: var(--fog); padding: 24px; border-radius: 14px;">
+        <p style="font-weight: 700; margin-bottom: 6px;">📍 Адреса офісу:</p>
+        <p style="margin-bottom: 14px;">65026, Україна, м. Одеса, вул. Грецька, 44 (поруч із ОНЕУ)</p>
+
+        <p style="font-weight: 700; margin-bottom: 6px;">📞 Телефон гарячої лінії:</p>
+        <p style="margin-bottom: 14px;"><a href="tel:+380971234567" style="color:#2563eb; font-weight:600;">+38 (097) 123-45-67</a></p>
+
+        <p style="font-weight: 700; margin-bottom: 6px;">✉️ Електронна пошта:</p>
+        <p style="margin-bottom: 14px;"><a href="mailto:odesa@fjelvik.ua" style="color:#2563eb; font-weight:600;">odesa@fjelvik.ua</a></p>
+
+        <p style="font-weight: 700; margin-bottom: 6px;">⏰ Графік роботи:</p>
+        <p>Пн – Пт: 09:00 – 19:00, Сб: 10:00 – 16:00, Нд: вихідний</p>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          title="Розташування офісу Fjelvik в Одесі"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.34565886528!2d30.7345258!3d46.4814495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631985b77c261%3A0x608a6c5d0b1a4093!2z0LLRg9C70LjRhtGPINCT0YDQtdGG0YzQutCwLCA0NCwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua"
+          width="100%"
+          height="100%"
+          style="min-height: 280px; border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Відгуки мандрівників ===== -->
+<section class="section quote-band on-photo" aria-labelledby="quote-title">
+  <img class="quote-band__img" src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Група мандрівників з рюкзаками піднімається кам'янистим гірським хребтом" width="2000" height="1333" loading="lazy" decoding="async" />
+  <div class="container quote-band__inner">
+    <h2 id="quote-title" class="sr-only">Відгуки мандрівників</h2>
+    <figure>
+      <blockquote>&ldquo;Чотири дні, одинадцять незнайомців і світанок на вершині вулкана. Я забронювала наступну поїздку вже в літаку додому.&rdquo;</blockquote>
+      <figcaption><strong>Оксана Ковальчук</strong> · Експедиція до вулкана Бромо</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== Заклик до дії ===== -->
+<section class="section closer" aria-labelledby="closer-cta">
+  <div class="container closer__card">
+    <div>
+      <p class="label">Готові вирушити у подорож?</p>
+      <h2 id="closer-cta">Розкажіть, де ви мрієте прокинутися завтра</h2>
+    </div>
+    <div class="closer__actions">
+      <a class="btn btn--gradient" href="contact.html">Спланувати поїздку</a>
+      <a class="btn btn--ghost" href="tours.html">Переглянути всі тури</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <!-- ОБОВ'ЯЗКОВИЙ НАДПИС ЗА РЕГЛАМЕНТОМ ОЦІНЮВАННЯ (ДОСЛІВНО): -->
+    <div class="educational-notice">
+      <strong>Увага!</strong> Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.
+    </div>
+
+    <div class="footer__top">
+      <div class="footer__lead">
+        <p class="footer__title">Листи з гірських стежок</p>
+        <p class="footer__sub">Один лист на місяць: нові маршрути, раннє бронювання та корисні поради від наших гідів. Жодного спаму.</p>
+        <form class="subscribe" data-demo-form novalidate>
+          <label class="sr-only" for="sub-email">Ваш email</label>
+          <input id="sub-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button class="btn btn--glacier" type="submit">Підписатися</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <p class="label footer__h">Тури та відпочинок</p>
+          <ul>
+            <li><a href="tours.html">Всі тури</a></li>
+            <li><a href="tours.html">Гірський трекінг</a></li>
+            <li><a href="tours.html">Острови та озера</a></li>
+            <li><a href="tour.html">Деталі туру</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label footer__h">Агенція Fjelvik</p>
+          <ul>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="about.html">Наші гіди</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="404.html">Сторінка 404</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label footer__h">Офіс в Одесі</p>
+          <address>
+            вул. Грецька, 44<br />м. Одеса, 65026, Україна<br />
+            <a href="tel:+380971234567">+38 (097) 123-45-67</a><br />
+            <a href="mailto:odesa@fjelvik.ua">odesa@fjelvik.ua</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__word" aria-hidden="true">fjelvik</p>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Fjelvik Travel Ukraine. Free template by <a href="https://html.design/" target="_blank" rel="noopener">html.design</a>.</p>
+      <p>Фотографії надано <a href="https://www.pexels.com/" target="_blank" rel="noopener">Pexels</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
